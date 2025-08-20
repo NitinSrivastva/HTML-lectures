@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List in HTML</title>
+</head>
+<body>
+    <h6>Unordered List</h6>
+    <!--<ul></ul> tag called ass unordered list -->
+    <!-- type:"disc" for shaded circle or use "circle" , "square" , none use for removing the bullets -->
+    <ul type = "circle">
+        <li>English</li>
+        <li>Maths</li>
+        <li>Social</li>
+    </ul>
+
+    <h6>Ordered List</h6>
+    <!--<ol></ol> tag called as Ordered list -->
+    <ol>
+        <li>English</li>
+        <li>Maths</li>
+        <li>Social</li>
+    </ol>
+
+    <ol reversed = "true">
+        <li>English</li>
+        <li>Maths</li>
+        <li>Social</li>
+    </ol>
+    <!--type = "1"(Default) , rather than 1 we can use A ,a , i(lower roman) , I(upper roman number)-->
+    <ol start = "8" type = "I" reversed = "true">
+        <li>English</li>
+        <ol type="A">
+            <li>Part of speech</li>
+            <li>Grammer</li>
+            <li>Sentence</li>
+            <li>word</li>
+            <li>Content</li>
+            <ul>
+                <li>Dummy1</li>
+                <li>Dummy2</li>
+            </ul>
+        </ol>
+        <li>Maths</li>
+        <li>Social</li>
+    </ol>
+
+    <h6>Description/Definition List</h6>
+    <!-- For definition list we use Dl tag over here -->
+    <dl>
+        <!-- <dt> : this tag names as difinition term -->
+            <dt>HTML:</dt>
+            <!-- <dd>: this tag names as definition description -->
+                <dd>Hyper text markup language</dd>
+
+    <dt>CSS:</dt>
+    <dd>Cascading style sheets</dd>
+
+    <dt>JS</dt>
+    <dd>Java script</dd>
+    </dl>
+</body>
+</html>
