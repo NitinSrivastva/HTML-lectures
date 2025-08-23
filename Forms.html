@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in Html</title>
+</head>
+<body>
+    <h2>Forms in Html</h2>
+    <form action="https://www.google.com" target="_blank">
+        <label for="firstname">First Name:</label>
+        <input id="firstname"type="text" required placeholder="Enter first name" 
+        value="" name="firstname"/>
+
+        <label for="middlename">Middle Name:</label>
+        <input id="middlename"type="text" placeholder="Enter middle name" />
+
+        <label for="lastname">Last Name:</label>
+        <input id="lastname"type="text" disabled />  <!--here disabled is used to disable some particular thing-->
+
+        <br><br>
+        <label for="age">Your Age:</label>
+        <input id="age" type="number" placeholder="Enter your Age"/>
+
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email"placeholder="Enter your email"/>
+
+        <br><br>
+        <label for="">Date of Joining:</label>
+        <input type="date"/>
+
+        <br><br>
+        <label for="">Password:</label>
+        <input type="password" placeholder="Enter your password"/>
+
+        <br><br>
+        <p>Enter your shirt size:</p>
+        <input type="radio" name="shirtsize" id="small" checked name=""value="small"/> 
+        <label for="small">Small size</label>
+        <input type="radio" name="shirtsize" id="medium" value="medium"/> 
+        <label for="medium">Medium size</label>
+        <input type="radio" name="shirtsize" id="large" value="large"/> 
+        <label for="large">Large size</label>
+
+        <br><br>
+        <p>Select your known language:</p>
+        <input type="checkbox" name="language" id="english" /> 
+        <label for="english">English</label>
+        <input type="checkbox" name="language" id="hindi" /> 
+        <label for="hindi">Hindi</label>
+        <input type="checkbox" name="language" id="sanskrit"/> 
+        <label for="sanskrit">Sanskrit</label>
+        <input type="checkbox" name="language" id="kannada"/> 
+        <label for="kannada">Kannada</label>
+
+        <br><br>
+        <label for="color">Hey! Please select the color of your shirt:</label>
+        <input id="color"type="color"/>
+        <!--for drop down option we'll have select tag -->
+        <br><br>
+        <label for="paymentoption">Please Select payment option</label>
+        <select name="payment" id="paymentoption">
+            <!--here by default on drop down option always show gPay for overcome this we use one more 
+            option tag with blank space -->
+            <option value=""></option>
+            <option value="gPay">gPay</option>
+            <option value="phonePe">phonePe</option>
+            <option value="Paytm">Paytm</option>
+            <option value="UPI">UPI</option>
+            <option value="COD">COD</option>
+        </select>
+
+        <br><br>
+        <label for="comment">please provide your valuable feedback</label>
+        <!-- <input type="text"> here we'll not use this tag because client give their 
+         valuable feedback for read again their feedback they slide the curser bar for overcome
+         this problem we will use textarea tag here.. -->
+        <textarea name="feedback" id="comment" rows="10" cols="40" 
+        placeholder="Please Enter your comment Here...."></textarea> 
+        <!--rows is used for height and cols is used for width by default-->
+
+        <br><br>
+        <input type="reset"/> <!--it is used to reset the form-->
+        <input type="submit"> <!--it is used to submit the form-->
+    </form>
+</body>
+</html>
