@@ -1,0 +1,18 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;  /* here we use box-sizing for actual size of box what exactly the value we'll assign*/
+}
+
+.box2{
+    padding: 60px;
+}
+
+/* bt default margin is 8px to avoid the default pixel use margin:0px */
+div{
+    border: 12px solid yellowgreen;
+    padding: 10px 40px;
+    margin: 40px 40px;
+    width: 250px;
+    height: 250px;
+}

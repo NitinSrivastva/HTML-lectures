@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: cornflowerblue;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 200px;
+}
+
+.container{
+    width: 280px;
+    height: 280px;
+    border: 3px solid white;
+    animation: orbit 2s linear infinite;
+    border-radius: 50%;
+}
+
+.box{
+    width: 80px;
+    height: 80px;
+    background-color: lightgray;
+
+    border-radius: 50%;
+
+
+    /* transition: 1s ease; */
+    /* animation-name: shiftThebox; */
+    /* animation-name: slide-In; */
+    /* animation-name: orbit;  */
+    animation-duration: 2s;
+    /* animation-delay: 2s; */
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate-reverse; */
+    animation-timing-function: linear;
+    /* animation-fill-mode: backwards; */
+    /* its by default backward for change the origin use forward */
+    animation-fill-mode: forwards;
+}
+
+/* .box:hover{
+    transform: translate(200px);
+} */
+
+/* Here we build the custom annimation using keyframe it mean by default transition happen */
+
+@keyframes orbit {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes slide-In {
+    0%{
+        transform: translate(-200px);
+    }
+    100%{
+        transform: translate(200px);
+    }
+}
+
+@keyframes shiftThebox {
+    0%,100%{
+        transform: translate(0,0);
+        /* border-radius: 50%; */
+    }
+    25%{
+        transform: translate(200px,0);
+        /* background-color: blue; */
+    }
+    50%{
+        transform: translate(200px,200px);
+    }
+    75%{
+        transform: translate(0,200px);
+    }
+}
+
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    animation: loading 0.9s infinite alternate;
+}
+
+.dot:nth-child(2){
+    animation-delay: 0.2s;
+}
+
+@keyframes loading {
+    from{
+        transform: translateY(-10px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}

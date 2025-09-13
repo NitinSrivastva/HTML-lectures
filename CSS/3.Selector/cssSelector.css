@@ -1,0 +1,66 @@
+/* 
+selector syntax
+selecortype{
+propertykey : propertyvalue;
+}
+*/
+
+/* Element selector */
+/* p{
+    color: red;
+}
+h2{
+    color: white;
+    background-color: black;
+} */
+
+/* ID selector */
+/* #PID{
+    color: brown;
+}
+#p1id{
+    font-family: cursive;
+} */
+
+/* Nested selector */
+/* #PID , #p1id , .highlighter , p{
+    color: brown;
+} */
+/* class selector */
+/* .highlighter{
+    background-color: yellow;
+}
+.headingstyle{
+    font-size: x-large;
+    color: red;
+} */
+
+/* specificity order */
+/* #nestedid{
+    color: blue;
+}
+.nested{
+    color: blueviolet;
+}
+p{
+    color: green;
+} */
+
+/* Universal selector */
+/* *{
+    font-family: 'Courier New', Courier, monospace;
+} */
+
+/* descendent selector */  /* here #descendent is parent id and p tag is called child of #descendent */
+/* #descendent p{  
+    color: brown;
+} */
+
+/* Direct child selector */
+#directsel > p{
+    color: chocolate;
+}
+
+p:hover{
+    color: blue;
+}

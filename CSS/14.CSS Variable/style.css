@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    color: var(--primary-text-color);
+    background-color: var(--box-background-color);
+    padding: var(--spacing-for-margin-padding);
+    margin: var(--spacing-for-margin-padding);
+}
+
+/* Create a global-variable using root element HTML tag is rooot element */
+:root{
+    --primary-text-color:red;
+    --secondary-text-color:blue;
+    --box-background-color:white;
+    --cointainer-background-color:#eee;
+    --spacing-for-margin-padding:20px
+}
+
+.dark{
+    --primary-text-color:#fff;
+    --secondary-text-color:#ddd;
+    --box-background-color:#333;
+    --cointainer-background-color:#eee;
+}
+.container{
+    padding: 45px;
+    /* --backg-color : aqua; local variable */
+    background-color: var(--cointainer-background-color);
+    min-height: 100vh;
+}
+
+h2{
+    /* Here we overlapping the localvariable from color aqua to yellow */
+    --backg-color : yellow;
+    /* background-color: var(--backg-color); */
+    color: var(--primary-text-color);
+}
+
+/* Here we create a Local variable name called as backg-color = aqua */
+.box{
+    padding: var(--spacing-for-margin-padding);
+    margin-block: var(--spacing-for-margin-padding);
+    /* --backg-color : aqua; */
+    background-color: var(--box-background-color);
+    border-radius: 5%;
+}
+
+.box p{
+    color: var(--secondary-text-color);
+}
+/* here we use background-color two time it will create redundancy code or duplicate 
+fo overcome this problem we do have some css variable   */
+h4{
+    padding: 45px;
+    /* background-color: var(--backg-color , pink); */
+    color: var(--primary-text-color);
+}
+
+/* @media(min-width:600px){
+    .container{
+        --backg-color:green;
+    }
+} */
+

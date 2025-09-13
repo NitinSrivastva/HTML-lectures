@@ -1,0 +1,35 @@
+.container{
+    /* width: 400px;
+    height: 400px;
+    background-color: aquamarine;
+    border: 2px solid red; */
+
+    /* overflow: visible;  default value*/
+    /* overflow: hidden; /*visible only those contain which are fitted in a box only  */
+    /* and other contain will be hidden from the user */ 
+    /* overflow: scroll; if we use scrollbar it is applicable whn we have lot of contents
+    if we have only limited line of content then scrollbar is not required here 
+    so to overcome this issue we use overflow: auto; */
+    /* overflow: auto; */
+
+    text-align: justify;
+
+    
+ }
+
+ .Subcontainer{
+        overflow: auto;
+    }
+
+    .img1{
+        /* float: left; */
+        float: right;
+    }
+    .img2{
+        float: left;
+        /* float: right; */
+    }
+
+    .p2{
+        clear: left;
+    }

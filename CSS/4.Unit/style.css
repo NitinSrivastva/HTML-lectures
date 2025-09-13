@@ -1,0 +1,26 @@
+main{
+    border: 2px solid brown;
+    /* border-radius: 5%; */
+    width: 50%;
+    /* % , VW(view width) , VH(view height) , px(pixel) , em(my parent elemnt font size) , 
+    rem (root element font size)*/
+    /* width: 50vw; */
+}
+section{
+    border: 4px dotted green;
+    /* height: 50vh; */
+    width: 70vw;
+}
+
+/* body{
+    font-size: 2em;
+} */
+
+h2{
+    /* font-size: 30px;   */ /* pixle having some drawback like if we change the font size of browser
+    it will not chnge with size of browser because the h2 tag is not in parent it is absolute that's why we use here em unit */
+    /* rem is root element font family rem overcome the drawback of em where em is parent element font size
+    mean em size multiply by their parent size is we use em then it is multiply by their parent font
+    size as well that's why we use rem here to avoid this kind of issues */
+    font-size: 2rem; 
+}

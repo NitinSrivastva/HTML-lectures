@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 2px solid red;
+    height: 700px;
+    display: grid;
+    gap: 10px;
+    /* grid-template-columns: 1fr 1fr 1fr; 
+    1fr is repeat most it will time taken for overcome this issue we use  repeat(3 , 1fr) this method */
+    /* fr as well as auto use for use total space of web page  */
+    /* use this method is not efficient beacuse size is fixed here */
+    /* grid-template-columns: repeat(4,1fr); */
+
+    grid-template-columns: 200px 200px 200px;
+
+    /* grid-template-rows: 100px 70px 150px; */
+    /* we define the height of 3 rows the rest rows of height is by default 120px using grid-auto-rows */
+    /* grid-auto-rows: 120px; */
+
+    /* justify-content: baseline;
+    
+    align-content: center; */
+}
+
+.box{
+    border: 2px solid green;
+    padding: 12px;
+}
+
+#box-1{
+    background-color: bisque;
+    /* justify-self: start;
+    align-self: center; */
+
+    /* here grid-row-start & grid-row-end use to merge the two aur multiple rows */
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+
+    /* we have shorthand method for both grid-column-start and grid-column-end */
+    /* grid-row: 1 / 3; */ 
+
+    /* one more method to acheive this property */
+    /* grid-row: 1 / span 3; */
+
+    /* here grid-column-start & grid-column-end use to merge the two aur multiple column */
+    /* -1 declare the last column from end and 5 declare the extra column by default */
+
+    /* grid-column-start: 1;
+    grid-column-end: -1; */
+
+    /* we have shorthand method for both grid-column-start and grid-column-end */
+    /* grid-column: 1 / -1; */
+
+    /* grid-column: 1 / span 3; */
+
+    /* For all this type of method one more method which have all the property */
+
+    grid-area: 2 / 1 / 3 / 3;
+}

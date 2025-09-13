@@ -1,0 +1,17 @@
+h1{
+    /* color: coral;
+    background-color: black;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: wavy; */
+    font-family: 'Courier New', Courier, monospace;
+}
+p{
+    text-align: justify;
+    text-indent: 80px;
+    letter-spacing: 5px;
+    line-height: 1.2rem;
+    word-spacing: 10px;
+    text-shadow: 1px 1px 5px rebeccapurple;
+    /* color: transparent; */
+}

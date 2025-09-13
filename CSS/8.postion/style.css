@@ -1,0 +1,54 @@
+.container{
+    width: 600px;
+    height: 600px;
+    background-color: aqua;
+    margin: 100px;
+    position: relative;
+}
+
+.box{
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+.static{
+    position: static;
+    background-color: black;
+}
+
+.rel{
+    position: relative;
+    background-color: red;
+    left: 150px;
+    bottom: 100px;
+}
+
+.abs{
+    position: absolute;
+    background-color: blue;
+    /* For extreme bottom left or bottom right or top left/top right */
+    bottom: 0px;
+    left: 0px;
+    z-index: 2;
+
+}
+
+.fix{
+    position: fixed;
+    background-color: brown;
+    bottom: 100px;
+    left: 50px;
+    z-index: 1;
+}
+
+.sti{
+    position: sticky;
+    background-color: purple;
+    top: 200px;
+    left: 120px;
+}
+
+.blankSpace{
+    height: 400vh;
+}

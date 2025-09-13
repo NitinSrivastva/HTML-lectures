@@ -1,0 +1,22 @@
+body{
+    background-color: aqua;
+}
+
+/* orientation means ya to horizontal(landscape) ya vertical (portrait) me hoga to color change hoga */
+/* @media(orientation: portrait){
+    body{
+        background-color: red;
+    }
+} */
+
+/* @media(width <= 500px){
+    body{
+        background-color: red;
+    }
+} */
+
+@media(min-width:500px) and (max-width:760px){
+    body{
+        background-color: green;
+    }
+}

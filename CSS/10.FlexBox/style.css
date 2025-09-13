@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 400px;
+    border: 2px solid brown;
+    display: flex;
+    /* flex-direction: row-reverse; for show the row in reverse order */
+    /* row(default) , row-revers , column , column-reverse */
+    /* flex-direction: row; */
+    /* wrap , nowrap(default) , wrap-reverse */
+    /* flex-wrap: wrap; */
+    flex-flow: wrap row;  
+    /* gap: 10px; */
+    /* row-gap: 10px;
+    column-gap: 10px;*/
+
+    /* flex-start(default) flex-end , centre ,space-around ,space-evenly , space-between*/
+    justify-content: space-around;
+    /* align item use for vertical box  */
+    align-items: centre;
+    /* align-items: stretch; we use this stretch for taking the parent height */
+    align-content: center;
+}
+
+.box{
+    border: 2px solid green;
+    /* margin: 10px 0px; */
+    width: 60px;
+    /* flex-basis use for proper space usedby boxes  in terms of width*/
+    /* flex-basis: 25%; */
+}
+
+#box-1{
+    /* order: 1; */
+    /* flex-grow: 1; */
+     /* flex shrink use krne ke liye wrap remove first then apply*/
+    /* flex-shrink: 2;  */
+
+    /* we can achieve all the flex propert in one line using flex : flex-grow flex-shrink  flex-basis */
+    flex: 0 0 200px;
+}
+
+#box-4{
+    order: 2;
+    /* flex-grow: 2; */
+}
