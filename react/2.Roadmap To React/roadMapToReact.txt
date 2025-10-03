@@ -1,0 +1,13 @@
+Q1. Why to learn React?
+ans:- Because of Job opportunity , in order to built UI using react concepts
+
+when we want to keep our code quite simple or easy to manage and build complex frontend we need react 
+
+Q2. When should we get started with React?
+ans:- Once we have a good solid knowledge of Foundation of java script 
+
+Q3. React Learning Approach
+Q4.React is a library
+Q5. Core concepts of react
+Q6. Additional addons to react
+Q7. After React

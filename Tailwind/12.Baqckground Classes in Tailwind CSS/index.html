@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Background Classes in Tailwind CSS</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+
+    <!-- in this method image got repeated  -->
+    <!-- <div class="bg-yellow-300 size-60 text-white h-100" style="background-image: url(./nature.jpeg);">
+    Background Classes in Tailwind CSS</div> -->
+
+    <!-- in this method image will not repeat -->
+     <!-- <div class="bg-yellow-300 h-100 bg-[url(nature.jpeg)] bg-no-repeat bg-center bg-contain" >   
+    Background Classes in Tailwind CSS</div> --> <!--bg-cover -->
+
+    <!-- gradient t:top , b:bottom , r:right , l:left , bl:bottom-to-left diagonaly-->
+    <div class=" gradient bg-gradient-to-t to-green-600 from-red-400 size-40  m-5"></div>
+    <div class=" gradient bg-gradient-to-b to-green-600 from-red-400 size-40 m-5"></div>
+    <div class=" gradient bg-gradient-to-r to-green-600 from-red-400 size-40 m-5"></div>
+    <div class=" gradient bg-gradient-to-l to-green-600 from-red-400 size-40 m-5"></div>
+
+    <div class=" gradient bg-gradient-to-bl to-green-600 from-red-400 size-40 m-5"></div>
+
+    <!-- discuss about  external shadow of box-->
+     <div class="size-96 shadow-2xl shadow-red-600 m-118"></div>
+
+    <!-- Internal shadow in the box  -->
+    <div class="size-50 shadow-inner shadow-green-500 m-18"></div>
+</body>
+</html>
